@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Build artifacts - mac
+mac/*.o
+mac/minizip/*.o
+mac/md3view
+mac/MD3View.app/
+
+# Build artifacts - win
+win/MD3View/bin/
+win/MD3View/obj/
+
+# Python
+lin/__pycache__/
+lin/*.pyc
+
+# IDE / Editor
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Claude Code
+.claude/
