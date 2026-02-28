@@ -32,6 +32,9 @@ jobs:
       - name: Build
         run: cd mac && make
 
+      - name: Sign
+        run: codesign --force --deep --sign - mac/MD3View.app
+
       - name: Package
         run: ditto -c -k --sequesterRsrc --keepParent mac/MD3View.app MD3View-macOS.zip
 
